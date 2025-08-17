@@ -1,0 +1,58 @@
+.中段::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+.オレンジ {
+    height: 100px;
+    width: 400px;
+    background-color: #ffce7a;
+    color: white;
+}
+.青 {
+    float: left;
+    height: 250px;
+    width: 150px;
+    background-color: #9DDDF4;
+    color: white;
+}
+.m4 {
+    float: left;
+}
+.mp {
+    float: left;
+}
+    .緑 {
+        height: 50px;
+        width: 150px;
+        background-color: #C2FFC8;
+        color: white;
+    }
+    .ピンク {
+        height: 100px;
+        width: 150px;
+        background-color: #FFC2C5;
+        color: white;
+    }  
+.赤 { 
+    float: left;
+    height: 150px;
+    width: 100px;
+    background-color: #F89C9C;
+    color: white;
+}
+.黄色 {
+    float: right;
+    height: 100px;
+    width: 250px;
+    background-color: #FFF083;
+    color: white;
+
+}
+.紫 {
+    height: 100px;
+    width: 400px;
+    background-color: #BEA5FF;
+    color: white;
+    float: left;
+}
