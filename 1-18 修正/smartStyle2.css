@@ -1,0 +1,64 @@
+@media screen and (max-width:767px) {
+    .オレンジ {
+        width: 300px;
+    }
+    .青 {
+        width: 100px;
+    }
+        .緑 {
+            width: 125px;
+        }
+        .ピンク {
+            width: 125px;
+        }  
+    .赤 { 
+        width: 75px;
+    }
+    .黄色 {
+        width: 200px;
+    }
+    .紫 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:479px) {
+        .オレンジ {
+            height: 100px;
+            width: 150px;
+        }
+        .青 {
+            height: 100px;
+            width: 150px;
+            float: none;
+        }
+        .m4 {
+            float: none;
+        }
+        .赤 { 
+            height: 100px;
+            width: 150px;
+            float: none;
+        }
+        .mp {
+            float: none;
+        }
+        .緑 {
+            height: 50px;
+            width: 150px;
+        }
+        .ピンク {
+            height: 100px;
+            width: 150px;
+        }  
+        .黄色 {
+            width: 150px;
+            height: 100px;
+            float: none;
+        }
+        .紫 {
+            width: 150px;
+            height: 100px;
+            float: none;
+        } 
+}
