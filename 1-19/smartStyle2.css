@@ -1,0 +1,31 @@
+@media screen and (max-width:479px) {
+    .オレンジ {
+        width: 200px;
+        height: 200px;
+        float: none;
+    }
+    .緑3 {
+        margin: 0 70px;
+        .中緑 {
+            margin: 10px auto;
+            display: block;
+            clear: both;
+        }
+    }
+    .青 {
+        float: none;
+        width: 200px;
+        height: 100px;
+    }
+    .緑 {
+        width: 200px;
+        height: 200px;
+
+        .ピ3 {
+            margin: 20px 30px;
+        }
+    }
+    .紫 {
+        width: 200px;
+    }
+}
