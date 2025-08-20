@@ -1,0 +1,39 @@
+@media screen and (max-width:479px) {
+    .オレンジ {
+        width: 200px;
+        height: 200px;
+        display: flex; /* flexモードにする */
+        justify-content: center; /* 横方向の中央 */
+        align-items: center; /* 縦方向の中央 */
+    }
+    .緑3 {
+        margin: 0 70px; /* 左右に70pxの余白 */
+        padding: 10px; /* 緑たちと10pxの余白 */
+        .中緑 {
+            margin: 0 auto; 
+            margin-bottom: 10px; /* 緑同士の区切り */
+            display: block;
+            clear: both; /* float解除 */
+        }
+        .中緑:last-child {
+        margin-bottom: 0;  /* 最後の子下の余白いらない */
+        }
+    }
+    .青 {
+        float: none;
+        width: 200px;
+        height: 80px;
+    }
+    .緑 {
+        width: 200px;
+        height: 200px;
+
+        .ピ3 {
+            margin: 20px 30px;
+        }
+    }
+    .紫 {
+        width: 200px;
+        height: 80px;
+    }
+}

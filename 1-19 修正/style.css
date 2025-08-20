@@ -1,0 +1,55 @@
+.all::after { /* allのfloat解除して紫表示させる */
+    content: '';
+    display: block;
+    clear: both;
+}
+.オレンジ {
+    height: 100px;
+    width: 400px;
+    background-color: #FFCE7a;
+}
+.緑3 {
+    background-color: white;
+    padding: 10px; /* 緑群との余白 */
+    margin: 20px; /* オレンジとの余白 */
+    float: right;
+
+    .中緑 {
+        float: left; /* 左寄せにして横に並ばせる */
+        height: 40px;
+        width: 40px;
+        background-color: #C2FFC8;
+        margin-right: 10px; /* 緑同士を区切る余白 */
+    }
+    .中緑:last-child {
+        margin-right: 0; /* 最後の子の右は余白いらないよ（白で余白済） */
+    }
+}
+.青 {
+    float: left;
+    height: 250px;
+    width: 150px;
+    background-color: #9DDDF4;
+}
+.緑 {
+    float: left;
+    height: 250px;
+    width: 250px;
+    background-color: #C2FFC8;
+
+    .ピ3 { /* 緑の中のどこに配置するかの指示 */
+        margin: 40px 60px 40px 40px;
+        .ピンク {
+            border: 5px solid white;
+            height: 40px;
+            width:140px;
+            background-color: #FFC2C5;
+            margin-bottom: 10px;
+        }
+    }
+}
+.紫 {
+    height: 100px;
+    width: 400px;
+    background-color: #BEA5FF;
+}
