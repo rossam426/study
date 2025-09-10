@@ -1,0 +1,49 @@
+package study;
+
+public class Task2_18 {
+
+	public static void main(String[] args) {
+		// 問② Personクラスをインスタンス化し、名前「山田太郎」 年齢「23」 住所「東京都」 をカプセル化されたsetterで設定して下さい。
+		Person yamada = new Person();
+
+		yamada.setName("山田太郎");
+		yamada.setAge(23);
+		yamada.setAddress("東京都");
+
+		// 問③ 設定した名前・年齢・住所をカプセル化されたgetterで呼び出してして下さい。
+		System.out.println("名前は、" + yamada.getName() + "です。");
+		System.out.println("年齢は、" + yamada.getAge() + "才です。");
+		System.out.println("住所は、" + yamada.getAdress() + "です。");
+	}
+}
+
+class Person {
+	private String name;
+	private int age;
+	private String address;
+
+	// 問① 上記変数に従って、getterとsetterを設定して下さい。
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String newName) {
+		name = newName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int newAge) {
+		age = newAge;
+	}
+
+	public String getAdress() {
+		return address;
+	}
+
+	public void setAddress(String newAddress) {
+		address = newAddress;
+	}
+}
