@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+#arguments=-Dorg.gradle.warning.mode\=all
+arguments=-Dorg.gradle.warning.mode\=all:-Porg.gradle.java.installations.paths\=/private/var/folders/14/bvnnn4rs061994jm1fb0t_zr0000gn/T/AppTranslocation/35F04392-100C-4DC3-B530-E4B90E71A9B3/d/Eclipse_2025-06.app/Contents/java/8,/private/var/folders/14/bvnnn4rs061994jm1fb0t_zr0000gn/T/AppTranslocation/35F04392-100C-4DC3-B530-E4B90E71A9B3/d/Eclipse_2025-06.app/Contents/java/11,/private/var/folders/14/bvnnn4rs061994jm1fb0t_zr0000gn/T/AppTranslocation/35F04392-100C-4DC3-B530-E4B90E71A9B3/d/Eclipse_2025-06.app/Contents/java/17,/private/var/folders/14/bvnnn4rs061994jm1fb0t_zr0000gn/T/AppTranslocation/35F04392-100C-4DC3-B530-E4B90E71A9B3/d/Eclipse_2025-06.app/Contents/java/21
+auto.sync=true
+### Mac はビルドスクリプトでパス書き換え (2022-06 で toolingapi が 7.4 で 17 対応になったためコメントアウト)
+# java.home=/private/var/folders/14/bvnnn4rs061994jm1fb0t_zr0000gn/T/AppTranslocation/35F04392-100C-4DC3-B530-E4B90E71A9B3/d/Eclipse_2025-06.app/Contents/java/11
