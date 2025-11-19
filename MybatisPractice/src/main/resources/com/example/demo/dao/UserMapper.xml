@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.UserMapper">
+
+	<!-- 全ユーザー取得 -->
+	<!--※ id=""はUserMapperクラスのメソッド名と一致させる -->
+	<select id="findAll"
+		resultType="com.example.demo.entity.UserEntity">
+
+		SELECT
+		id,
+		name,
+		address,
+		phone,
+		update_date,
+		create_date
+		FROM "user"<!-- "user 
+			は PostgreSQL の予約語なので、クォートしないとエラーになる" -->
+		ORDER BY id
+
+	</select>
+
+	<!-- 課題1 下記にユーザー情報の主キー検索SQLを記述 -->
+	<select id="findById"
+		resultType="com.example.demo.entity.UserEntity">
+		SELECT
+		id,
+		name,
+		address,
+		phone,
+		update_date,
+		create_date
+		FROM
+		"user"
+		WHERE id = #{id}
+	</select>
+
+	<!-- 課題2 下記にユーザー情報の新規登録SQLを記述 -->
+	<insert id="create"
+		parameterType="com.example.demo.entity.UserEntity">
+		INSERT INTO "user" (
+		name,
+		address,
+		phone,
+		update_date,
+		create_date
+		) VALUES (
+		#{name},
+		#{address},
+		#{phone},
+		#{updateDate},
+		#{createDate}
+		)
+	</insert>
+
+
+
+	<!-- 課題3 下記にユーザー情報の更新する動的SQLを記述 ※<if test="name != null">name = #{name},</if> -->
+	<update id="update"
+		parameterType="com.example.demo.entity.UserEntity">
+		UPDATE "user"
+		<set>
+			<if test="name != null">name = #{name},</if>
+			<if test="address != null">address = #{address},</if>
+			<if test="phone != null">phone = #{phone},</if>
+			<if test="updateDate != null">update_date = #{updateDate}</if>
+		</set>
+		WHERE id = #{id}
+	</update>
+
+
+</mapper>
