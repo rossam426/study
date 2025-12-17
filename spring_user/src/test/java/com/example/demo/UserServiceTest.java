@@ -3,6 +3,9 @@ package com.example.demo;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,14 +24,20 @@ public class UserServiceTest {
 	private UserRepository userRepository;
 	
 	@Test
-	void findById_モックを使ってDB依存を回避() {
+	void searchAll_モックを使ってDB依存を回避() {
 		UserEntity user = new UserEntity();
 		user.setId(1);
 		user.setName("衣織");
 		
-		when(userRepository.getOne(1)).thenReturn(user);
-		UserEntity result = userService.findById(1);
-		assertEquals("衣織", result.getName());
+		List<UserEntity> list = new ArrayList<>();
+		list.add(user);
+		
+		when(userRepository.findAll()).thenReturn(list);
+		List<UserEntity> result = userService.searchAll();
+		
+		UserEntity testUser = result.get(0);
+		String name = testUser.getName();
+		assertEquals("衣織", name);
 	}
 
 }
