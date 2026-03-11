@@ -1,0 +1,53 @@
+.center::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.all{
+    display: flex;
+}
+
+.left{
+    float: left;
+}
+
+.red {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+.center-left{
+    float: left;
+}
+
+.orange {
+    width: 100px;
+    height: 150px;
+    background-color: orange;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.purple {
+    width: 185px;
+    height: 265px;
+    background-color: purple;
+    float: right;
+}
+
+.pink {
+    width: 100px;
+    height: 380px;
+    background-color: pink;
+    float: right;
+    margin-left: 15px;
+}
