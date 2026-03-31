@@ -1,0 +1,11 @@
+cat <<EOF > app.log
+2025-11-01 09:00:01 INFO  App started.
+2025-11-01 09:00:05 INFO  Connected to database.
+2025-11-01 09:01:10 WARN  Response is slow.
+2025-11-01 09:02:20 ERROR Failed to load config.
+2025-11-01 09:03:00 INFO  Retrying...
+2025-11-01 09:03:30 ERROR Timeout occurred.
+2025-11-01 09:04:10 DEBUG Auth step 1.
+2025-11-01 09:04:40 INFO  Auth success.
+2025-11-01 09:05:00 INFO  App running normally.
+EOF
