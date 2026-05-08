@@ -1,0 +1,10 @@
+cat <<EOF > system.log
+2025-11-02 10:00:01 INFO  System boot.
+2025-11-02 10:00:05 INFO  Network connected.
+2025-11-02 10:01:10 WARN  Disk usage 80%.
+2025-11-02 10:01:45 ERROR Disk write failed.
+2025-11-02 10:02:20 INFO  Retry started.
+2025-11-02 10:03:00 ERROR Disk write failed.
+2025-11-02 10:03:30 DEBUG Cleanup job started.
+2025-11-02 10:04:10 INFO  Cleanup finished.
+EOF
